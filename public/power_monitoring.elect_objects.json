@@ -1,0 +1,1988 @@
+[{
+  "_id": {
+    "$oid": "650b365bf87475848868859e"
+  },
+  "name": "TE73 - 1128056352",
+  "type": "meter",
+  "parent_object": {
+    "$oid": "65133dce08be85977d49a9a7"
+  },
+  "parameters": [
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a0f"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf87475848868859f"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a10"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a0"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a11"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a1"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a12"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a2"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a13"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a3"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a14"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a4"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a15"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a5"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a16"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a6"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a17"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a7"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a18"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a8"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a19"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a9"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1a"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885aa"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1b"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ab"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1c"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ac"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1d"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ad"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1e"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ae"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1f"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885af"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a20"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b0"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a21"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b1"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a22"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b2"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a23"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b3"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a24"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b4"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a25"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b5"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a26"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b6"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a27"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b7"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a28"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b8"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a29"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b9"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2a"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ba"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2b"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bb"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2c"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bc"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2d"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bd"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2e"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885be"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-09-20T18:13:47.776Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-20T18:13:47.776Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65133dce08be85977d49a9a7"
+  },
+  "name": "Ввод-1 10 кВ",
+  "type": "feeder",
+  "parent_object": {
+    "$oid": "65133e6d08be85977d49a9a9"
+  },
+  "vt": {
+    "dividend": 100,
+    "divisor": 10
+  },
+  "ct": {
+    "dividend": 100,
+    "divisor": 20
+  },
+  "parameters": [
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a0f"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf87475848868859f"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a10"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a0"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a11"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a1"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a12"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a2"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a13"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a3"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a14"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a4"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a15"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a5"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a16"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a6"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a17"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a7"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a18"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a8"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a19"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a9"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1a"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885aa"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1b"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ab"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1c"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ac"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1d"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ad"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1e"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ae"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1f"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885af"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a20"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b0"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a21"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b1"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a22"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b2"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a23"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b3"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a24"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b4"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a25"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b5"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a26"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b6"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a27"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b7"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a28"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b8"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a29"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b9"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2a"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ba"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2b"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bb"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2c"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bc"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2d"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bd"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2e"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885be"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-09-11T16:03:03.370Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-11T16:03:03.370Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65133e5608be85977d49a9a8"
+  },
+  "name": "Ахангаранцемент - Новый завод",
+  "type": "factory",
+  "parameters": [
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a0f"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf87475848868859f"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a10"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a0"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a11"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a1"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a12"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a2"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a13"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a3"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a14"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a4"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a15"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a5"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a16"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a6"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a17"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a7"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a18"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a8"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a19"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a9"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1a"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885aa"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1b"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ab"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1c"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ac"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1d"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ad"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1e"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ae"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1f"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885af"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a20"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b0"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a21"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b1"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a22"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b2"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a23"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b3"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a24"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b4"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a25"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b5"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a26"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b6"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a27"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b7"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a28"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b8"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a29"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b9"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2a"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ba"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2b"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bb"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2c"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bc"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2d"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bd"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2e"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885be"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-09-11T16:03:03.299Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-11T16:03:03.299Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65133e6d08be85977d49a9a9"
+  },
+  "name": "Секция шин №1",
+  "type": "tire_section",
+  "parent_object": {
+    "$oid": "65133f0008be85977d49a9aa"
+  },
+  "parameters": [
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a0f"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf87475848868859f"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a10"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a0"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a11"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a1"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a12"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a2"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a13"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a3"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a14"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a4"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a15"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a5"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a16"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a6"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a17"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a7"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a18"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a8"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a19"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a9"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1a"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885aa"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1b"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ab"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1c"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ac"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1d"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ad"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1e"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ae"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1f"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885af"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a20"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b0"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a21"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b1"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a22"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b2"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a23"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b3"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a24"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b4"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a25"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b5"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a26"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b6"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a27"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b7"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a28"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b8"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a29"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b9"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2a"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ba"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2b"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bb"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2c"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bc"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2d"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bd"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2e"
+      },
+      "multiply": [
+        1
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885be"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-09-11T16:03:03.362Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-11T16:03:03.362Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65133f0008be85977d49a9aa"
+  },
+  "name": "Сириус 10 кВ",
+  "type": "substation",
+  "parent_object": {
+    "$oid": "65133e5608be85977d49a9a8"
+  },
+  "parameters": [
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a0f"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf87475848868859f"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a10"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a0"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a11"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a1"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a12"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a2"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a13"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a3"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a14"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a4"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a15"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a5"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a16"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a6"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a17"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a7"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a18"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a8"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a19"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885a9"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1a"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885aa"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1b"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ab"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1c"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ac"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1d"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ad"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1e"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ae"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a1f"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885af"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a20"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b0"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a21"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b1"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a22"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b2"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a23"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b3"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a24"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b4"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a25"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b5"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a26"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b6"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a27"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b7"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a28"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b8"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a29"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885b9"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2a"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885ba"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2b"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bb"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2c"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bc"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2d"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885bd"
+      }
+    },
+    {
+      "parameter_id": {
+        "$oid": "64ff2cc5e85dbfa712dd8a2e"
+      },
+      "multiply": [
+        1,
+        10,
+        5
+      ],
+      "_id": {
+        "$oid": "650b365bf8747584886885be"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-09-11T16:03:03.355Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-11T16:03:03.355Z"
+  }
+}]

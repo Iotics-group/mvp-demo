@@ -1,0 +1,480 @@
+[{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0f"
+  },
+  "channel_type": "B",
+  "channel_number": 1,
+  "channel_full_id": "B1",
+  "parameter_type": "archive",
+  "param_short_name": "energyarchive_A+",
+  "param_name": "Расход А+",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a10"
+  },
+  "channel_type": "B",
+  "channel_number": 2,
+  "channel_full_id": "B2",
+  "parameter_type": "archive",
+  "param_short_name": "energyarchive_R+",
+  "param_name": "Расход R+",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a11"
+  },
+  "channel_type": "B",
+  "channel_number": 3,
+  "channel_full_id": "B3",
+  "parameter_type": "archive",
+  "param_short_name": "energyarchive_R-",
+  "param_name": "Расход R-",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a12"
+  },
+  "channel_type": "B",
+  "channel_number": 1,
+  "channel_full_id": "B1",
+  "parameter_type": "total",
+  "param_short_name": "energytotal_A+",
+  "param_name": "Показание А+ (Авточтения)",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a13"
+  },
+  "channel_type": "B",
+  "channel_number": 2,
+  "channel_full_id": "B2",
+  "parameter_type": "total",
+  "param_short_name": "energytotal_R+",
+  "param_name": "Показание R+ (Авточтения)",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a14"
+  },
+  "channel_type": "B",
+  "channel_number": 3,
+  "channel_full_id": "B3",
+  "parameter_type": "total",
+  "param_short_name": "energytotal_R-",
+  "param_name": "Показание R- (Авточтения)",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a15"
+  },
+  "channel_type": "G",
+  "channel_number": 15,
+  "channel_full_id": "G15",
+  "parameter_type": "current",
+  "param_short_name": "voltage_A",
+  "param_name": "Напряжение фазы A",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a16"
+  },
+  "channel_type": "G",
+  "channel_number": 16,
+  "channel_full_id": "G16",
+  "parameter_type": "current",
+  "param_short_name": "voltage_B",
+  "param_name": "Напряжение фазы B",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a17"
+  },
+  "channel_type": "G",
+  "channel_number": 17,
+  "channel_full_id": "G17",
+  "parameter_type": "current",
+  "param_short_name": "voltage_C",
+  "param_name": "Напряжение фазы C",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a18"
+  },
+  "channel_type": "G",
+  "channel_number": 18,
+  "channel_full_id": "G18",
+  "parameter_type": "current",
+  "param_short_name": "current_A",
+  "param_name": "Ток фазы А",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a19"
+  },
+  "channel_type": "G",
+  "channel_number": 19,
+  "channel_full_id": "G19",
+  "parameter_type": "current",
+  "param_short_name": "current_B",
+  "param_name": "Ток фазы B",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a1a"
+  },
+  "channel_type": "G",
+  "channel_number": 20,
+  "channel_full_id": "G20",
+  "parameter_type": "current",
+  "param_short_name": "current_C",
+  "param_name": "Ток фазы C",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a1b"
+  },
+  "channel_type": "G",
+  "channel_number": 2,
+  "channel_full_id": "G2",
+  "parameter_type": "current",
+  "param_short_name": "frequency",
+  "param_name": " Частота (F)",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a1c"
+  },
+  "channel_type": "G",
+  "channel_number": 5,
+  "channel_full_id": "G5",
+  "parameter_type": "current",
+  "param_short_name": "active-power_A",
+  "param_name": "Активная мощность фазы А",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a1d"
+  },
+  "channel_type": "G",
+  "channel_number": 6,
+  "channel_full_id": "G6",
+  "parameter_type": "current",
+  "param_short_name": "active-power_B",
+  "param_name": "Активная мощность фазы B",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a1e"
+  },
+  "channel_type": "G",
+  "channel_number": 7,
+  "channel_full_id": "G7",
+  "parameter_type": "current",
+  "param_short_name": "active-power_C",
+  "param_name": "Активная мощность фазы C",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a1f"
+  },
+  "channel_type": "G",
+  "channel_number": 3,
+  "channel_full_id": "G3",
+  "parameter_type": "current",
+  "param_short_name": "active-power_total",
+  "param_name": "Активная мощность общая ",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a20"
+  },
+  "channel_type": "G",
+  "channel_number": 12,
+  "channel_full_id": "G12",
+  "parameter_type": "current",
+  "param_short_name": "full-power_A",
+  "param_name": "Полная мощность фазы А",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a21"
+  },
+  "channel_type": "G",
+  "channel_number": 13,
+  "channel_full_id": "G13",
+  "parameter_type": "current",
+  "param_short_name": "full-power_B",
+  "param_name": "Полная мощность фазы B",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a22"
+  },
+  "channel_type": "G",
+  "channel_number": 14,
+  "channel_full_id": "G14",
+  "parameter_type": "current",
+  "param_short_name": "full-power_C",
+  "param_name": "Полная мощность фазы C",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a23"
+  },
+  "channel_type": "G",
+  "channel_number": 11,
+  "channel_full_id": "G11",
+  "parameter_type": "current",
+  "param_short_name": "full-power_total",
+  "param_name": "Полная мощность фазы общая ",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a24"
+  },
+  "channel_type": "G",
+  "channel_number": 8,
+  "channel_full_id": "G8",
+  "parameter_type": "current",
+  "param_short_name": "reactive-power_A",
+  "param_name": "Реактивная мощность фазы А",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a25"
+  },
+  "channel_type": "G",
+  "channel_number": 9,
+  "channel_full_id": "G9",
+  "parameter_type": "current",
+  "param_short_name": "reactive-power_B",
+  "param_name": "Реактивная мощность фазы B",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a26"
+  },
+  "channel_type": "G",
+  "channel_number": 10,
+  "channel_full_id": "G10",
+  "parameter_type": "current",
+  "param_short_name": "reactive-power_C",
+  "param_name": "Реактивная мощность фазы C",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a27"
+  },
+  "channel_type": "G",
+  "channel_number": 4,
+  "channel_full_id": "G4",
+  "parameter_type": "current",
+  "param_short_name": "reactive-power_total",
+  "param_name": "Реактивная мощность фазы общая",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a28"
+  },
+  "channel_type": "G",
+  "channel_number": 22,
+  "channel_full_id": "G22",
+  "parameter_type": "current",
+  "param_short_name": "coef-active-power_A",
+  "param_name": " Коэффициент активной мощности фазы А",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a29"
+  },
+  "channel_type": "G",
+  "channel_number": 23,
+  "channel_full_id": "G23",
+  "parameter_type": "current",
+  "param_short_name": "coef-active-power_B",
+  "param_name": " Коэффициент активной мощности фазы B",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a2a"
+  },
+  "channel_type": "G",
+  "channel_number": 24,
+  "channel_full_id": "G24",
+  "parameter_type": "current",
+  "param_short_name": "coef-active-power_C",
+  "param_name": " Коэффициент активной мощности фазы C",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a2b"
+  },
+  "channel_type": "G",
+  "channel_number": 21,
+  "channel_full_id": "G21",
+  "parameter_type": "current",
+  "param_short_name": "coef-active-power_total",
+  "param_name": " Коэффициент активной мощности фазы общая",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a2c"
+  },
+  "channel_type": "B",
+  "channel_number": 1,
+  "channel_full_id": "B1",
+  "parameter_type": "current",
+  "param_short_name": "energycurrent_A+",
+  "param_name": "Расход А+",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a2d"
+  },
+  "channel_type": "B",
+  "channel_number": 2,
+  "channel_full_id": "B2",
+  "parameter_type": "current",
+  "param_short_name": "energycurrent_R+",
+  "param_name": "Расход R+",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ff2cc5e85dbfa712dd8a2e"
+  },
+  "channel_type": "B",
+  "channel_number": 3,
+  "channel_full_id": "B3",
+  "parameter_type": "current",
+  "param_short_name": "energycurrent_R-",
+  "param_name": "Расход R -",
+  "meter": {
+    "$oid": "64ff2cc5e85dbfa712dd8a0d"
+  },
+  "__v": 0
+}]

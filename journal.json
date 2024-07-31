@@ -1,0 +1,258 @@
+{
+  "0001" : {
+      "type_label": {
+        "ru": "Предупреждение",
+        "en": "Warning"
+      },
+      "key": "on",
+      "type": "warning",
+      "label": {
+        "ru": "Отключение питания счетчика",
+        "en": "Meter power outage"
+      },
+      "text": {
+        "ru": "Отключение питания - Питание в счетчике было отключено",
+        "en": "Power outage - Power to the meter has been turned off"
+      }
+  },
+  "0002" : {
+      "type_label": {
+        "ru": "Удачно",
+        "en": "Success"
+      },
+      "key": "off",
+      "type": "success",
+      "label": {
+        "ru": "Включение питания счетчика",
+        "en": "Meter power on"
+      },
+      "text": {
+        "ru": "Включение питания - Питание в счетчике было включено",
+        "en": "Power On - Power to the meter has been turned on"
+      }
+  },
+  "0003" : {
+      "type_label": {
+        "ru": "Предупреждение",
+        "en": "Warning"
+      },
+      "key": "open",
+      "type": "warning",
+      "label": {
+        "ru": "Открытие клеммной крышки счетчика",
+        "en": "Opening the terminal cover of the meter"
+      },
+      "text": {
+        "ru": "Вскрытие клеммной крышки - Клеммная крышка счетчика была вскрыта",
+        "en": "Opening the terminal cover - The terminal cover of the meter has been opened"
+      }
+  },
+  "0004" : {
+      "type_label": {
+        "ru": "Удачно",
+        "en": "Success"
+      },
+      "key": "close",
+      "type": "success",
+      "label": {
+        "ru": "Закрытие клеммной крышки счетчика",
+        "en": "Closing the terminal cover of the meter"
+      },
+      "text": {
+        "ru": "Закрытие клеммной крышки - Клеммная крышка счетчика была закрыта",
+        "en": "Closing the terminal cover - The terminal cover of the meter was closed"
+      }
+  },
+  "0005" : {
+      "type_label": {
+        "ru": "Критическая ошибка",
+        "en": "Critical error"
+      },
+      "key": "phase_volt_A_off",
+      "type": "error",
+      "label": {
+        "ru": "Пропадание напряжении на фазе А",
+        "en": "Voltage failure of phase A"
+      },
+      "text": {
+        "ru": "Пропадание напряжении фазы А - Фаза А находится в состоянии без напряжения",
+        "en": "Voltage failure of phase A - Phase A is in a state without voltage"
+      }
+  },
+  "0006" : {
+      "type_label": {
+        "ru": "Удачно",
+        "en": "Success"
+      },
+      "key": "phase_volt_A_on",
+      "type": "success",
+      "label": {
+        "ru": "Восстановление напряжении на фазе А",
+        "en": "Voltage restoration on phase A"
+      },
+      "text": {
+        "ru": "Восстановление напряжении на фазе А - На фазе А появился напряжения",
+        "en": "Voltage restoration on phase A - Voltage has appeared on phase A"
+      }
+  },
+  "0007" : {
+      "type_label": {
+        "ru": "Критическая ошибка",
+        "en": "Critical error"
+      },
+      "key": "phase_volt_B_off",
+      "type": "error",
+      "label": {
+        "ru": "Пропадание напряжении на фазе B",
+        "en": "Voltage failure of phase B"
+      },
+      "text": {
+        "ru": "Пропадание напряжении на фазе B - Фаза B находится в состоянии без напряжения",
+        "en": "Voltage failure of phase B - Phase B is in a state without voltage"
+      }
+  },
+  "0008" : {
+      "type_label": {
+        "ru": "Удачно",
+        "en": "Success"
+      },
+      "key": "phase_volt_B_on",
+      "type": "success",
+      "label": {
+        "ru": "Восстановление напряжении на фазе B",
+        "en": "Voltage restoration on phase B"
+      },
+      "text": {
+        "ru": "Восстановление напряжении на фазе B - На фазе B появился напряжения",
+        "en": "Voltage restoration on phase B - Voltage has appeared on phase B"
+      }
+  },
+  "0009" : {
+      "type_label": {
+        "ru": "Критическая ошибка",
+        "en": "Critical error"
+      },
+      "key": "phase_volt_C_off",
+      "type": "error",
+      "label": {
+        "ru": "Пропадание напряжении на фазе C",
+        "en": "Voltage failure of phase C"
+      },
+      "text": {
+        "ru": "Пропадание напряжении на фазе C - Фаза C находится в состоянии без напряжения",
+        "en": "Voltage failure of phase C - Phase C is in a state without voltage"
+      }
+  },
+  "0010" : {
+      "type_label": {
+        "ru": "Удачно",
+        "en": "Success"
+      },
+      "key": "phase_volt_C_on",
+      "type": "success",
+      "label": {
+        "ru": "Восстановление напряжении на фазе C",
+        "en": "Voltage restoration on phase C"
+      },
+      "text": {
+        "ru": "Восстановление напряжении на фазе C - На фазе C появился напряжения",
+        "en": "Voltage restoration on phase C - Voltage has appeared on phase C"
+      }
+  },
+  "0011" : {
+      "type_label": {
+        "ru": "Критическая ошибка",
+        "en": "Critical error"
+      },
+      "key": "phase_current_A_off",
+      "type": "error",
+      "label": {
+        "ru": "Пропадание тока на фазе А",
+        "en": "Loss of current in phase A"
+      },
+      "text": {
+        "ru": "Пропадание тока на фазе А - Фаза A обезточен",
+        "en": "Loss of current in phase A - Phase A is de-energized"
+      }
+  },
+  "0012" : {
+      "type_label": {
+        "ru": "Удачно",
+        "en": "Success"
+      },
+      "key": "phase_current_A_on",
+      "type": "success",
+      "label": {
+        "ru": "Восстановление тока на фазе А",
+        "en": "Current restoration in phase A"
+      },
+      "text": {
+        "ru": "Восстановление тока на фазе А - На фазе A появился ток",
+        "en": "Current restoration in phase A - Current appears in phase A"
+      }
+  },
+  "0013" : {
+      "type_label": {
+        "ru": "Критическая ошибка",
+        "en": "Critical error"
+      },
+      "key": "phase_current_B_off",
+      "type": "error",
+      "label": {
+        "ru": "Пропадание тока на фазе B",
+        "en": "Loss of current in phase B"
+      },
+      "text": {
+        "ru": "Пропадание тока на фазе B - Фаза B обезточен",
+        "en": "Loss of current in phase B - Phase B is de-energized"
+      }
+  },
+  "0014" : {
+      "type_label": {
+        "ru": "Удачно",
+        "en": "Success"
+      },
+      "key": "phase_current_B_on",
+      "type": "success",
+      "label": {
+        "ru": "Восстановление тока на фазе B",
+        "en": "Current restoration in phase B"
+      },
+      "text": {
+        "ru": "Восстановление тока на фазе B - На фазе B появился ток",
+        "en": "Current restoration in phase B - Current appears in phase B"
+      }
+  },
+  "0015" : {
+      "type_label": {
+        "ru": "Критическая ошибка",
+        "en": "Critical error"
+      },
+      "key": "phase_current_C_off",
+      "type": "error",
+      "label": {
+        "ru": "Пропадание тока на фазе C",
+        "en": "Loss of current in phase C"
+      },
+      "text": {
+        "ru": "Пропадание тока на фазе C - Фаза C обезточен",
+        "en": "Loss of current in phase C - Phase C is de-energized"
+      }
+  },
+  "0016" : {
+    "type_label": {
+      "ru": "Удачно",
+      "en": "Success"
+    },
+    "key": "phase_current_C_on",
+    "type": "success",
+    "label": {
+      "ru": "Восстановление тока на фазе C",
+      "en": "Current restoration in phase C"
+    },
+    "text": {
+      "ru": "Восстановление тока на фазе C - На фазе C появился ток",
+      "en": "Current restoration in phase C - Current appears in phase C"
+    }
+  }
+}
