@@ -53,6 +53,9 @@
                 <label for="">{{$locale['ipAddress'][$i18n.locale.value]}}</label>
                 <input :class="{required: ipError}" @input="formatPort" v-model="ip_address" type="text" :placeholder="$locale['enterIpAddress'][$i18n.locale.value]">
               </div>
+              <div v-if="(payload_meter.connection_channel == '0')||(payload_meter.connection_channel == '2')" class="new-apl-file">
+                <Select :options="comlist" @click="getrelist" @getSelected="getComport($event)" :placeholder="$locale['selectComPort'][$i18n.locale.value]" :label="$locale['comPort'][$i18n.locale.value]" id="comlist"/>
+              </div>
               <div v-if="((connection_channel=='3') && (type_modem == 'gprs'))" class="new-apl-file">
                 <label for="">{{$locale['numberSimCard'][$i18n.locale.value]}}</label>
                 <input v-model="payload_meter.ip_address" type="text" :placeholder="$locale['enterNumberSimCard'][$i18n.locale.value] + '+998000000000)'">
@@ -60,6 +63,26 @@
               <div v-if="(payload_meter.connection_channel == '1')||(connection_channel == '3')" class="new-apl-file">
                 <label for="">{{$locale['port'][$i18n.locale.value]}}</label>
                 <input :class="{required:portError}" v-model="payload_meter.port" type="number" :placeholder="$locale['enterPort'][$i18n.locale.value]">
+              </div>
+              <div v-if="(payload_meter.connection_channel == '0')||(payload_meter.connection_channel == '2')" class="new-apl-file">
+                <Select :bottom="true" :options="baudrates" @getSelected="getBaudrate($event)" :placeholder="$locale['selectBaudrate'][$i18n.locale.value]" :label="$locale['baudrate'][$i18n.locale.value]" id="baudrate"/>
+              </div>
+              <div v-if="(payload_meter.connection_channel == '0')||(payload_meter.connection_channel == '2')" class="new-apl-file">
+                <Select :bottom="true" :options="parity" @getSelected="getparity($event)" :placeholder="$locale['selectParity'][$i18n.locale.value]" :label="$locale['parity'][$i18n.locale.value]" id="parity"/>
+              </div>
+              <div v-if="(payload_meter.connection_channel == '0')||(payload_meter.connection_channel == '2')" class="new-apl-file">
+                <Select :options="stop_bit" @getSelected="getstop_bit($event)" :placeholder="$locale['selectStop_bit'][$i18n.locale.value]" :label="$locale['stop_bit'][$i18n.locale.value]" id="stop_bit"/>
+              </div>
+              <div v-if="(payload_meter.connection_channel == '0')||(payload_meter.connection_channel == '2')" class="new-apl-file">
+                <Select :options="data_bit" @getSelected="getdata_bit($event)" :placeholder="$locale['selectData_bit'][$i18n.locale.value]" :label="$locale['data_bit'][$i18n.locale.value]" id="data_bit"/>
+              </div>
+              <div v-if="payload_meter.connection_channel == '2'" class="new-apl-file">
+                <label for="">{{$locale['modem_command'][$i18n.locale.value]}}</label>
+                <input v-model="payload_meter.modem_command" type="text" :placeholder="$locale['enterModem_command'][$i18n.locale.value]">
+              </div>
+              <div v-if="payload_meter.connection_channel == '2'" class="new-apl-file">
+                <label for="">{{$locale['numberSimCard'][$i18n.locale.value]}}</label>
+                <input v-model="payload_meter.modem_phone" type="text" :placeholder="$locale['enterNumberSimCard'][$i18n.locale.value] + 'ATD+998000000000)'">
               </div>
               <div class="new-apl-file">
                 <label for="">{{$locale['waiting_time'][$i18n.locale.value]}}</label>
@@ -134,6 +157,10 @@
                 <label for="">{{$locale['dataPolling'][$i18n.locale.value]}}</label>
                 <input v-model="payload_meter.data_polling_length" type="text" :placeholder="$locale['enterDataPolling'][$i18n.locale.value]">
               </div>
+              
+              <!-- <div class="new-apl-file">
+                <Select :options="options4" @getSelected="getPeriod($event,'data_refresh_length')" label="Частота обновления данных" placeholder="Выберите частоту обновления данных" id="uspd4"/>
+              </div> -->
             </div>
             <div class="uspd-ser-req mt-30">
               <div class="uspd-time-block">
@@ -216,8 +243,16 @@ export default {
       ],
       options2: [
           {
+              "classificator": "0",
+              "name": "COM - RS485/RS232",
+          },
+          {
               "classificator": "1",
               "name": this.$locale['tcpClient'][this.$i18n.locale.value],
+          },
+          {
+              "classificator": "2",
+              "name": "Modem",
           },
           {
               "classificator": "3",
@@ -233,6 +268,52 @@ export default {
           {
               "classificator": "weekly",
               "name": this.$locale['weekly'][this.$i18n.locale.value],
+          },
+      ],
+      options4: [
+          {
+            "classificator": '5',
+            "name": "5 секунд",
+          },
+          {
+            "classificator": '10',
+            "name": "10 секунд",
+          },
+          {
+            "classificator": '20',
+            "name": "20 секунд",
+          },
+          {
+            "classificator": '30',
+            "name": "30 секунд",
+          },
+          {
+            "classificator": '60',
+            "name": "1 минута",
+          },
+          {
+            "classificator": '120',
+            "name": "2 минута",
+          },
+          {
+            "classificator": '180',
+            "name": "3 минута",
+          },
+          {
+            "classificator": '300',
+            "name": "5 минута",
+          },
+          {
+            "classificator": '600',
+            "name": "10 минута",
+          },
+          {
+            "classificator": '1800',
+            "name": "30 минута",
+          },
+          {
+            "classificator": '3600',
+            "name": "1 час",
           },
       ],
       comlist: [],
@@ -510,6 +591,24 @@ export default {
                   this.tab++
                 }
               })
+          }else if(this.payload_meter.connection_channel == '0' && 
+            this.payload_meter.comport && 
+            this.payload_meter.baud_rate && 
+            this.payload_meter.stop_bit && 
+            this.payload_meter.password && 
+            this.payload_meter.data_bit && 
+            this.payload_meter.parity){
+            this.tab++
+          }else if(this.payload_meter.connection_channel == '2' && 
+            this.payload_meter.comport && 
+            this.payload_meter.baud_rate && 
+            this.payload_meter.stop_bit && 
+            this.payload_meter.data_bit && 
+            this.payload_meter.password && 
+            this.payload_meter.modem_command && 
+            this.payload_meter.modem_phone && 
+            this.payload_meter.parity){
+            this.tab++
           }else{
             this.error = true
           }
@@ -543,6 +642,14 @@ export default {
       let requestName = '/meter/create';
       if(this.payload_meter._id){
         requestName = '/meter/update/'+this.payload_meter._id;
+      }
+      if((this.payload_meter.connection_channel == '0')||(this.payload_meter.connection_channel == '2')){
+        delete this.payload_meter.ip_address
+        delete this.payload_meter.port
+        requestName = '/meter/create-com';
+        if(this.payload_meter._id){
+          requestName = '/meter/update-com/'+this.payload_meter._id;
+        }
       }
       if(this.payload_meter.connection_channel == '1'){
         delete this.payload_meter.comport
