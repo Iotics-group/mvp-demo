@@ -78,12 +78,6 @@
         </div>
       </div>
     </div>
-    <transition name="modal" :duration="600">
-      <modalEModel :edit="edit" @response="setstatus($event)" :objType="objType" :idx="idx" @modalShow="modalShow" v-if="modal"/>
-    </transition>
-    <transition name="modal" :duration="600">
-      <modalRemove :report="true" @response="setstatus($event)" :idx="idx" @modalShow="modalShow" v-if="remove"/>
-    </transition>
     <transition name="notify" :duration="10000">
       <notify :main="$locale['successfully'][$i18n.locale.value]" :text="$locale['requestCompletedSuccessfully'][$i18n.locale.value]" @close="success=false" typeModal="success" v-if="success"/>
     </transition>
@@ -97,8 +91,6 @@ import { ipcRenderer } from 'electron';
 import TreeParentFirst from '../components/menu/TreeParentFirst2.vue';
 import TreeParentSec from '../components/menu/TreeParentSec.vue';
 import Select from '../components/select2.vue'
-import modalEModel from '../components/modals/modalEModelReport.vue';
-import modalRemove from '../components/modals/modalRemove.vue';
 export default {
   data() {
     return {
@@ -148,8 +140,6 @@ export default {
   components:{
     TreeParentFirst,
     TreeParentSec,
-    modalEModel,
-    modalRemove,
     Select
   },
   methods: {

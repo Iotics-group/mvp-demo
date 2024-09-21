@@ -27,12 +27,6 @@ const router = createRouter({
       meta: {layout: 'main', auth: true},
     },
     {
-      path: '/schema',
-      name: 'schema',
-      component: () => import('../views/schema.vue'),
-      meta: {layout: 'main', auth: true},
-    },
-    {
       path: '/vector-diagram',
       name: 'vectordiagram',
       component: () => import('../views/vector-diagram.vue'),

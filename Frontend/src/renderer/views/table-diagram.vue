@@ -238,11 +238,6 @@
         </div>
       </div>
     </div>
-    <div v-show="false">
-      <div ref="tableRate">
-        <tablePdf v-if="menu?.length" :menu="menu" :inpFilter="inpFilter" :activeFilterView="activeFilterView" :billing="billing" :dataArr="dataArr" :setedArr="setedArr" :setedArr3="setedArr3" :archive="archive"/>
-      </div>
-    </div>
     <transition name="notify" :duration="10000">
       <notify :main="$locale['warning'][$i18n.locale.value]" :text="$locale['dontSelect'][$i18n.locale.value]" @close="warning = false" typeModal="warning" v-if="warning" />
     </transition>
@@ -252,7 +247,6 @@
   import { ipcRenderer } from 'electron';
   import TreeParentFirstReport from '../components/menu/TreeParentFirstReport.vue';
   import TreeParentFirst from '../components/menu/TreeParentFirst.vue';
-  import tablePdf from "../components/pdf/tablePdf.vue";
   import icons from '../components/icons.vue';
   import datepicker from '../components/datepicker/datepicker.vue'
   export default {
@@ -336,7 +330,6 @@
       icons,
       TreeParentFirstReport,
       datepicker,
-      tablePdf
     },
     methods: {
       numFixed(e){

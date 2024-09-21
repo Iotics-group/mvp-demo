@@ -14,8 +14,6 @@
           <button @click="changeTab(3)" :class="{active: tab == 3}" class="tab">{{$locale['activation'][$i18n.locale.value]}}</button>
         </div>
         <div class="add-settings" v-if="role == 'admin'">
-          <!-- <button class="blue-button" @click="editUser(null)" v-if="tab==1">{{$locale['newUser'][$i18n.locale.value]}}</button> -->
-          <!-- <button class="blue-button" @click="openModal2 = true" v-if="tab==2">Новая временная зона</button> -->
         </div>
       </div>
       <div class="settings-staff mt-30">
@@ -30,15 +28,6 @@
             <div class="td">{{el.role == 'admin' ? $locale['role_admin'][$i18n.locale.value] : $locale['role_user'][$i18n.locale.value]}}</div>
             <div class="td">
               <p>{{dateFilter(el.last_active)}}</p>
-              <div v-if="(role == 'admin') || (el._id == id)" class="set-action">
-                <button v-if="el?.active" @click="editUser(el)">
-                  <Icons icon="pen" />
-                </button>
-                <button v-if="(el?.role != 'admin')&&(role == 'admin')" @click="remove(index,el)">
-                  <Icons v-if="!el?.active" icon="hiddeneye" color="red"/>
-                  <Icons v-else icon="eye" color="#09FF04"/>
-                </button>
-              </div>
             </div>
           </div>
           <div class="tbody" v-for="(el,index) in data2" :key="index">
@@ -46,12 +35,6 @@
             <div class="td">{{el.role == 'admin' ? $locale['role_admin'][$i18n.locale.value] : $locale['role_user'][$i18n.locale.value]}}</div>
             <div class="td">
               <p>{{dateFilter(el.last_active)}}</p>
-              <div v-if="(el?.role != 'admin')&&(role == 'admin')" class="set-action">
-                <button @click="remove2(index,el)">
-                  <Icons v-if="!el?.active" icon="hiddeneye" color="red"/>
-                  <Icons v-else icon="eye" color="#09FF04"/>
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -145,49 +128,19 @@
       </div>
     </div>
   </div>
-  <transition name="modal" :duration="600">
-    <modalAddUser :user="user" @modalShow="modalShow()" v-if="openModal"/>
-  </transition>
-  <transition name="modal" :duration="600">
-    <modalRemove :status="status" :user="user" :idx="idx" @modalShow="modalShow2($event)" v-if="idx && openRemove"/>
-  </transition>
-  <transition name="modal" :duration="600">
-    <modalLicense @response="setstatus($event)" @modalShow="modalShow3($event)" v-if="successLicense"/>
-  </transition>
-  <transition name="modal" :duration="600">
-    <modalLicenseOnline @modalShow="modalShow4($event)" v-if="successLicenseOnline"/>
-  </transition>
   <transition name="notify" :duration="10000">
     <notify :main="$locale['successfully'][$i18n.locale.value]" :text="$locale['requestCompletedSuccessfully'][$i18n.locale.value]" @close="success=false" typeModal="success" v-if="success"/>
   </transition>
   <transition name="notify" :duration="10000">
     <notify :main="$locale['error'][$i18n.locale.value]" :text="wrongM || $locale['somethingWrong'][$i18n.locale.value]" @close="wrong=false" :typeModal="error" v-if="wrong"/>
   </transition>
-  <!-- <transition name="modal" :duration="600">
-    <modalAddTimezone @modalShow="modalShow3()" v-if="openModal2"/>
-  </transition>
-  <transition name="modal" :duration="600">
-    <modalRemoveTimezone :idx="idx2" @modalShow="modalShow4()" v-if="idx2 && openRemove2"/>
-  </transition> -->
 </template>
 <script>
 import packageV from "../../../package.json";  
 import Icons from '../components/icons.vue'
-import modalAddUser from '../components/modals/modalAddUser.vue'
-import modalRemove from '../components/modals/modalRemoveUser.vue'
-import modalLicense from '../components/modals/modalLicense.vue'  
-import modalLicenseOnline from '../components/modals/modalLicenseOnline.vue'  
-// import modalAddTimezone from '../components/modals/modalAddTimezone.vue'  
-// import modalRemoveTimezone from '../components/modals/modalRemoveTimezone.vue'
 export default {
   components: { 
     Icons,
-    modalAddUser,
-    modalRemove,
-    modalLicense,
-    modalLicenseOnline,
-    // modalAddTimezone,
-    // modalRemoveTimezone
   },
   name: 'settings-page',
   data(){
@@ -259,14 +212,6 @@ export default {
         return "-"
       }
     },
-    editUser(el){
-      if(el){
-        this.user = el
-      }else{
-        this.user = null
-      }
-      this.openModal = true
-    },
     async modalShow(){
       this.openModal = false
       await this.$axios.get('/admin/list?status=active').then((res) => {
@@ -307,26 +252,6 @@ export default {
           }
         }
       })
-    },
-    async remove(index,el){
-      if(el){
-        this.user = el
-      }else{
-        this.user = null
-      }
-      this.idx = (index+1)
-      this.status = true
-      this.openRemove = true
-    },
-    async remove2(index,el){
-      if(el){
-        this.user = el
-      }else{
-        this.user = null
-      }
-      this.idx = (index+1)
-      this.status = false
-      this.openRemove = true
     },
     async modalShow2(e){
       this.idx = null

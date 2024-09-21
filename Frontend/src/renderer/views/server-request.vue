@@ -223,24 +223,11 @@
               </div>
             </div>
           </div>
-          <div class="model-btn" v-if="this.active?.meter">
-            <!-- <button v-if="canHandleReq" @click="openHandleRequest">{{$locale['handleReq'][$i18n.locale.value]}}</button>
-            <button v-if="(user_tools == 'admin')" class="bg-tr" @click="editCounter">{{$locale['edit'][$i18n.locale.value]}}</button> -->
-          </div>
         </div>
       </div>
     </div>
     <transition name="modal" :duration="600">
       <modalHandleRequest :active="active" @modalShow="modalShow('handleRequest')" v-if="handleRequest"/>
-    </transition>
-    <transition name="modal" :duration="600">
-      <modalFile :active="active" :idx="idx" @modalShow="modalShow('fileShow')" v-if="fileShow"/>
-    </transition>
-    <transition name="modal" :duration="600">
-      <modalRemove :idx="idx" :data="{objType:objType,active:this.active,activeFolder:this.activeFolder}" @modalShow="modalShow('remove')" v-if="remove"/>
-    </transition>
-    <transition name="modal" :duration="600">
-      <modalCounter :active="model" :idx="idx" @modalShow="modalShow('counterShow')" @response="setstatus($event)" v-if="counterShow"/>
     </transition>
     
     <transition name="notify" :duration="10000">
@@ -254,14 +241,10 @@
 <script>
 import { ipcRenderer } from 'electron';
 import TreeParentFiles from '../components/menu/TreeParentFiles.vue';
-import modalFile from '../components/modals/modalFile.vue';
 import modalHandleRequest from '../components/modals/modalHandleRequest.vue';
 import timer from '../components/timer.vue';
 import timerMon from '../components/timerMonthly.vue';
 import timerWeek from '../components/timerWeekly.vue';
-import modalRemove from '../components/modals/modalRemove.vue';
-import modalCounter from '../components/modals/modalCounter.vue';
-// import { SerialPort } from 'serialport'
 
 export default {
   name: 'server-req',
@@ -314,13 +297,10 @@ export default {
   },
   components:{
     TreeParentFiles,
-    modalFile,
     timer,
     timerMon,
     timerWeek,
-    modalRemove,
     modalHandleRequest,
-    modalCounter
   },
   watch:{
     tab(){
@@ -335,12 +315,6 @@ export default {
   methods: {
     openHandleRequest(){
       this.handleRequest = !this.handleRequest
-    },
-    editCounter(){
-      if(this.active?.meter){
-        this.idx = this.active?.meter
-        this.counterShow = !this.counterShow
-      }
     },
     setupEventSource() {
       let baseUrl = (localStorage.getItem('BASE_URL') || process.env.VUE_APP_BASE_URL || "http://192.168.1.10:1000/");
@@ -395,22 +369,6 @@ export default {
           this.allArrMin.push((('0'+res?.hour).slice(-2) + ':' + ('0'+res2).slice(-2)))
         })
       })
-    },
-    setstatus(e){
-      if(e.status < 300){
-        this.success = true
-        let _t = this
-        setTimeout(()=>{
-          _t.success = false
-        },5000)
-      }else{
-        this.wrong = true
-        this.wrongM = e.message
-        let _t = this
-        setTimeout(()=>{
-          _t.wrong = false
-        },5000)
-      }
     },
     async modalShow(e){
       this[e] = false
@@ -618,19 +576,6 @@ export default {
         }
       }
     })
-    ipcRenderer.on('context-menu-add-file', () => {
-      this.active = null
-      this.fileShow = !this.fileShow
-    })
-    ipcRenderer.on('context-menu-remove', () => {
-      this.remove = !this.remove
-    })
-    ipcRenderer.on('context-menu-rename-file', () => {
-      this.fileShow = !this.fileShow
-    })
-    ipcRenderer.on('context-menu-edit-counter', () => {
-      this.editCounter()
-    })
     // ipcRenderer.on('context-menu-add-uspd', () => {
     //   this.uspdShow = !this.uspdShow
     // })
@@ -638,21 +583,6 @@ export default {
       this.model = null
       this.counterShow = !this.counterShow
     })
-    // document.getElementById('server')?.addEventListener('contextmenu', (e) => {
-    //   if((sessionStorage.getItem('user_tools') == 'admin') && e.target.id) {
-    //     this.objType = e.target.getAttribute('name')
-    //     this.idx = e.target.id
-    //     e.preventDefault()
-    //     if(this.objType == 'meter'){
-    //       ipcRenderer.send('show-context-menu2',this.objType,this.$i18n.locale.value)
-    //     }else{
-    //       ipcRenderer.send('show-context-menu',this.objType,this.$i18n.locale.value)
-    //     }
-    //     // if(this.objType != 'meter'){
-    //     //   ipcRenderer.send('show-context-menu',this.objType)
-    //     // }
-    //   }
-    // })
     
     this.getH()
     this.setupEventSource();

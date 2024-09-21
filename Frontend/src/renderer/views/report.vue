@@ -102,9 +102,9 @@
             </div>
           </div>
           <div class="new-apl-g1 scroll" v-if="id">
-            <div v-show="!el.isReportObject" class="report-file" v-for="(el, index) in files" :key="index">
+            <div class="report-file" v-for="(el, index) in files" :key="index">
               <div class="report-file-title">
-                <p>{{ el.name?.[$i18n.locale.value] }}</p>
+                <p>{{ el?.name?.[$i18n.locale.value] }}</p>
                 <!-- <span>04.35.0541</span> -->
               </div>
               <Icons
@@ -129,23 +129,8 @@
     <div v-if="loadpdf" ref="page-to-print">
       <pdf1 :data="fetchData" :fetchdata="repdata1" :total="total"/>
     </div>
-    <div v-if="loadpdf2" ref="page-to-print2">
-      <pdf1 :data="fetchData" :fetchdata="repdata2" :total="total2"/>
-    </div>
     <div v-if="loadpdf3" ref="page-to-print3">
       <pdf2 :factoryName="factoryName" :data="fetchData" :fetchdata="repdata3"/>
-    </div>
-    <div v-if="loadpdf4" ref="page-to-print4">
-      <Timezone :factoryName="factoryName" :data="fetchData" :fetchdata="repdata4"/>
-    </div>
-    <div v-if="loadpdf5" ref="page-to-print5">
-      <noBalance :location="location" :reportList="reportList" :data="fetchData"/>
-    </div>
-    <div v-if="loadpdf6" ref="page-to-print6">
-      <report6 :location="location" :reportList="reportList" :data="fetchData"/>
-    </div>
-    <div v-if="loadpdf7" ref="page-to-print7">
-      <report7 :factoryName="factoryName" :data="fetchData" :fetchdata="repdata3"/>
     </div>
   </div>
   <transition name="notify" :duration="10000">
@@ -157,10 +142,6 @@ import { ipcRenderer } from "electron";
 import TreeParentFirst from "../components/menu/TreeParentFirst.vue";
 import pdf1 from "../components/pdf/report1.vue";
 import pdf2 from "../components/pdf/report2.vue";
-import noBalance from "../components/pdf/noBalance.vue";
-import report6 from "../components/pdf/report6.vue";
-import report7 from "../components/pdf/report7.vue";
-import Timezone from "../components/pdf/timezone.vue";
 import TreeParentFirstReport from "../components/menu/TreeParentFirstReport.vue";
 import datepicker from "../components/datepicker/datepicker.vue";
 import Icons from "../components/icons.vue";
@@ -200,45 +181,10 @@ export default {
           isReportObject: false,
         },
         {
-          name: {ru:"Расход (А-, R-) энергии по дням и по временным зонам",en:"Consumption (A-, R-) of energy by day and by time zone."},
-          com: 'page-to-print2',
-          landscape: false,
-          openkey: 'loadpdf2',
-          isReportObject: false,
-        },
-        {
           name: {ru:"Расход (A+, A-, R+, R-) энергии по стандартам РУз «Четырёх тарифный режим»",en:"Energy consumption (A+, A-, R+, R-) according to the standards of the Republic of Uzbekistan «Four tariff regime»."},
           com: 'page-to-print3',
           landscape: true,
           openkey: 'loadpdf3',
-          isReportObject: false,
-        },
-        {
-          name: {ru:"Расход (A+, A-, R+, R-) энергии по стандартам РУз «Трёх тарифный режим»",en:"Energy consumption (A+, A-, R+, R-) according to the standards of the Republic of Uzbekistan «Three tariff regime»."},
-          com: 'page-to-print7',
-          landscape: true,
-          openkey: 'loadpdf7',
-          isReportObject: false,
-        },
-        {
-          name: {ru:"Максимальная мощность по дням и по временным зонам",en:"Maximum power by day and by time zone."},
-          com: 'page-to-print4',
-          landscape: false,
-          openkey: 'loadpdf4',
-          isReportObject: false,
-        },
-        {
-          name: {ru:"Небаланс энергии объекта по (A+, A-, R+, R-)",en:"Imbalance of the object's energy according to (A+, A-, R+, R-)."},
-          com: 'page-to-print5',
-          landscape: true,
-          openkey: 'loadpdf5',
-          isReportObject: false,
-        },
-        {
-          name: {ru:"Расчёт расхода объекта по расчетным группам и параметрам",en:"Calculation of object consumption by calculation groups and parameters."},
-          com: 'page-to-print6',
-          landscape: true,
-          openkey: 'loadpdf6',
           isReportObject: false,
         },
       ],
@@ -255,15 +201,9 @@ export default {
       location: [],
       openBlock: true,
       beforeFLBValue: 100,
-      isReportObject: false,
       beforeFLBValue2: 100,
       loadpdf: false,
-      loadpdf2: false,
       loadpdf3: false,
-      loadpdf4: false,
-      loadpdf5: false,
-      loadpdf6: false,
-      loadpdf7: false,
       factoryName: '',
     };
   },
@@ -274,10 +214,6 @@ export default {
     Icons,
     pdf1,
     pdf2,
-    noBalance,
-    report6,
-    report7,
-    Timezone
   },
   methods: {
     getH(){
@@ -331,23 +267,10 @@ export default {
     },
     async getEmit(e){
       this.id = e
-      this.isReportObject = false
-      this.files[2].isReportObject = false
-      this.files[3].isReportObject = false
-      if((this.active?.type == 'feeder') || (this.active?.type == 'meter')){
-        this.files[5].isReportObject = true
-        this.files[6].isReportObject = true
-      }else{
-        this.files[5].isReportObject = false
-        this.files[6].isReportObject = false
-      }
       this.getId(e)
     },
     async getEmitForReport(e){
       this.id = e
-      this.isReportObject = true
-      this.files[2].isReportObject = true
-      this.files[3].isReportObject = true
       this.getId(e)
     },
     activeParam(e) {
@@ -431,75 +354,6 @@ export default {
         this.loading = true
       }
     },
-    async reportARminus(){
-      this.loading = false
-      let fetchData = {...this.fetchData}
-      if(this.id&&fetchData?.startDate&&fetchData?.finishDate) {
-        let data = {
-          date1: fetchData.startDate,
-          date2: fetchData.finishDate,
-          step: false
-        }
-        let reqname = this.isReportObject ? (`/calculation/report/${this.id}`) : (`/electricity/report/${this.id}`)
-        this.total2 = {
-          first_tariff:0,
-          second_tariff:0,
-          third_tariff:0,
-          fourth_tariff:0,
-          general_aplus:0,
-          general_rplus:0,
-        },
-        await this.$axios.get((reqname),{params:{...data}}).then((res) => {
-          if(res?.data){
-            this.repdata2 = res?.data?.data
-            Object.keys(this.repdata2?.data).map((el)=>{
-              this.total2.first_tariff += this.repdata2?.data?.[el]?.first_tariff
-              this.total2.second_tariff += this.repdata2?.data?.[el]?.second_tariff
-              this.total2.third_tariff += this.repdata2?.data?.[el]?.third_tariff
-              this.total2.fourth_tariff += this.repdata2?.data?.[el]?.fourth_tariff
-              this.total2.general_aplus += this.repdata2?.data?.[el]?.general_aplus
-              this.total2.general_rplus += this.repdata2?.data?.[el]?.general_rplus
-            })
-          }
-        }).catch(async (error)=>{
-          const statusCode = (error.response || {}).status || -1;
-          if (statusCode == 406) {
-            if(error.config.method == 'get'){
-              await this.$axios.post('refresh_token','',{headers:{refresh:localStorage.getItem('refresh')}}).then(async (res)=>{
-                localStorage.setItem('session',res?.data?.session)
-                let reqname = this.isReportObject ? (`/calculation/report/${this.id}`) : (`/electricity/report/${this.id}`)
-                await this.$axios.get((reqname),{params:{...data}}).then((res) => {
-                  if(res?.data){
-                    this.total2 = {
-                      first_tariff:0,
-                      second_tariff:0,
-                      third_tariff:0,
-                      fourth_tariff:0,
-                      general_aplus:0,
-                      general_rplus:0,
-                    },
-                    this.repdata2 = res?.data?.data
-                    Object.keys(this.repdata2?.data).map((el)=>{
-                      this.total2.first_tariff += this.repdata2?.data?.[el]?.first_tariff
-                      this.total2.second_tariff += this.repdata2?.data?.[el]?.second_tariff
-                      this.total2.third_tariff += this.repdata2?.data?.[el]?.third_tariff
-                      this.total2.fourth_tariff += this.repdata2?.data?.[el]?.fourth_tariff
-                      this.total2.general_aplus += this.repdata2?.data?.[el]?.general_aplus
-                      this.total2.general_rplus += this.repdata2?.data?.[el]?.general_rplus
-                    })
-                  }
-                }).catch((err)=>{
-                  console.log(err);
-                })
-              }).catch((err)=>{
-                console.log(err);
-              })
-            }
-          }
-        })
-        this.loading = true
-      }
-    },
     async reportBilling(){
       let fetchData = {...this.fetchData}
       if(this.id&&fetchData?.startDate&&fetchData?.finishDate) {
@@ -547,72 +401,6 @@ export default {
         })
       }
     },
-    async reportMaxPower(){
-      this.loading = false
-      let fetchData = {...this.fetchData}
-      if(this.id&&fetchData?.startDate&&fetchData?.finishDate) {
-        let data = {
-          date1: fetchData.startDate,
-          date2: fetchData.finishDate,
-        }
-        let reqname = this.isReportObject ? (`/calculation/report-second/${this.id}`) : (`/electricity/report-second/${this.id}`)
-        await this.$axios.get((reqname),{params:{...data}}).then((res) => {
-          if(res?.data?.data){
-            this.repdata4 = res?.data?.data
-          }
-        }).catch(async (error)=>{
-          const statusCode = (error.response || {}).status || -1;
-          if (statusCode == 406) {
-            if(error.config.method == 'get'){
-              await this.$axios.post('refresh_token','',{headers:{refresh:localStorage.getItem('refresh')}}).then(async (res)=>{
-                localStorage.setItem('session',res?.data?.session)
-                let reqname = this.isReportObject ? (`/calculation/report-second/${this.id}`) : (`/electricity/report-second/${this.id}`)
-                await this.$axios.get((reqname),{params:{...data}}).then((res) => {
-                  if(res?.data?.data){
-                    this.repdata4 = res?.data?.data
-                  }
-                }).catch((err)=>{
-                  console.log(err);
-                })
-              }).catch((err)=>{
-                console.log(err);
-              })
-            }
-          }
-        })
-        this.loading = true
-      }
-    },
-    async reportNoBalance(){
-      this.loading = false
-      let fetchData = {...this.fetchData}
-      if(this.id&&fetchData?.startDate&&fetchData?.finishDate) {
-        let data = {
-          date1: fetchData.startDate,
-          date2: fetchData.finishDate,
-        }
-        let reqname = this.isReportObject ? (`/calculation/report-third/${this.id}`) : (`/electricity/report-third/${this.id}`)
-        await this.$axios.get((reqname),{params:{...data}}).then((res) => {
-          if(res?.data?.data){
-            this.reportList = res?.data?.data
-            this.location = res?.data?.location
-          }
-        }).catch(async (error)=>{
-          const statusCode = (error.response || {}).status || -1;
-          if (statusCode == 406) {
-            if(error.config.method == 'get'){
-              await this.$axios.post('refresh_token','',{headers:{refresh:localStorage.getItem('refresh')}}).then(async (res)=>{
-                localStorage.setItem('session',res?.data?.session)
-                await this.reportNoBalance()
-              }).catch((err)=>{
-                console.log(err);
-              })
-            }
-          }
-        })
-        this.loading = true
-      }
-    },
     async reportqwe(){
       this.loading = false
       let fetchData = {...this.fetchData}
@@ -653,24 +441,8 @@ export default {
       }
       if(el.openkey == 'loadpdf'){
         await this.reportARplus()
-      }else if(el.openkey == 'loadpdf2'){
-        await this.reportARminus()
       }else if(el.openkey == 'loadpdf3'){
         await this.reportBilling()
-      }else if(el.openkey == 'loadpdf4'){
-        await this.reportMaxPower()
-      }else if(el.openkey == 'loadpdf5'){
-        if((this.active?.type != 'feeder')&&(this.active?.type != 'meter')){
-          await this.reportNoBalance()
-        }else{
-          return
-        }
-      }else if(el.openkey == 'loadpdf6'){
-        if((this.active?.type != 'feeder')&&(this.active?.type != 'meter')){
-          await this.reportqwe()
-        }else{
-          return
-        }
       }else{
         await this.reportBilling()
       }
