@@ -1,0 +1,84 @@
+
+[
+    {
+      "name": {"ru":"Сервер опроса","en":"Server requests"},
+      "url": "server-req",
+      "classificator": "1",
+      "disabled": true,
+      "icons": "server_req"
+    },
+    {
+      "name": {"ru":"Объекты учёта","en":"Accounting objects"},
+      "url": "home",
+      "disabled": true,
+      "icons": "object_rep",
+      "classificators": ["2","3"],
+      "subMenu": [
+        {
+          "name": {"ru":"Электрический модель","en":"Electric model"},
+          "url": "emodel",
+          "classificator": "2",
+          "disabled": false,
+          "icons": "side_map"
+        },
+        {
+          "name": {"ru":"Расчетный модель ","en":"Calculation model"},
+          "url": "epmodel",
+          "classificator": "3",
+          "disabled": false,
+          "icons": "side_object"
+        }
+      ]
+    },
+    {
+      "name": {"ru":"Панель графиков","en":"Graph panel"},
+      "classificator": "4",
+      "url": "",
+      "disabled": true,
+      "icons": "dashboard"
+    },
+    {
+      "name": {"ru":"Графики и данные","en":"Graphs and data"},
+      "url": "graph-panel",
+      "disabled": false,
+      "icons": "graphics",
+      "classificators": ["5","6","7"],
+      "subMenu": [
+        {
+          "name": {"ru":"Графики и данные","en":"Graphs and data"},
+          "url": "graph-panel",
+          "classificator": "5",
+          "disabled": false,
+          "icons": "graphics"
+        },
+        {
+          "name": {"ru":"Векторная диаграмма","en":"Vector diagram"},
+          "url": "vector-diagram",
+          "disabled": false,
+          "classificator": "6",
+          "icons": "graphics"
+        },
+        {
+          "name": {"ru":"Таблица данных","en":"Data table"},
+          "url": "table-diagram",
+          "classificator": "7",
+          "disabled": false,
+          "icons": "graphics"
+        }
+      ]
+    },
+    {
+      "name": {"ru":"Отчёты","en":"Reports"},
+      "url": "report",
+      "classificator": "8", 
+      "disabled": true,
+      "icons": "report"
+    },
+    {
+      "name": {"ru":"Настройки","en":"Settings"},
+      "classificator": "9",
+      "url": "settings",
+      "icons": "side_settings",
+      "disabled": true
+    }
+  ]
